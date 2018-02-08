@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Katas</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="katas.js"></script>
+  </head>
+  <body>
+   <script>
+       const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
+    </script>   
+    <h1>Katas</h1>
+    <p id="p1">
+      <script>
+        for( x=1; x <= 20; x++) {
+            if(x == 20) {
+                document.write(x + ' :)');
+            } else {
+                document.write(x);
+                document.write(' ');
+            }
+        }
+     </script>
+    </p>
+    <p id="p2">
+      <script>
+          for(x=1; x<=20; x++) {
+              if(x%2 == 0) {
+                  document.write(x + " ");
+              } else {
+                document.write('');
+              }
+          }
+      </script>
+    </p>
+    <p id="p3">
+      <script>
+          for(x=1; x<=20; x++) {
+              if(x%2 != 0) {
+                  document.write(x + " ");
+              } else {
+                document.write('');
+              }
+          }
+      </script>
+    </p>
+    <p id="p4">
+      <script>
+        for(x=1; x<=100; x++) {
+            if(x%5 == 0) {
+                document.write(x + " ");
+            } else {
+                document.write('');
+              }
+          }
+      </script>
+    </p>
+    <p id="p5">
+      <script>
+          for(x=1; x<=10; x++) {
+              document.write(x*x);
+              document.write(" ");
+          }
+      </script>
+    </p>
+    <p id="p6">
+      <script>
+          for(x=20; x > 0; x--) {
+              document.write(x + " ");
+          }
+      </script>
+    </p>
+    <p id="p7">
+      <script>
+          for(x=20; x > 0; x--) {
+              if(x%2 == 0) {
+                document.write(x + " ");
+              } else {
+                  document.write('');
+              }
+          }
+      </script>
+    </p>
+    <p id="p8">
+      <script>
+          for(x=20; x > 0; x--) {
+              if(x%2 != 0) {
+                document.write(x + " ");
+              } else {
+                  document.write('');
+              }
+          }
+      </script>
+    </p>
+    <p id="p9">
+      <script>
+        for(x=100; x > 0; x--) {
+            if(x%5 == 0) {
+                document.write(x + " ");
+            } else {
+                document.write('');
+              }
+          }
+      </script>
+    </p>
+    <p id="p10">
+      <script>
+        for(x=10; x > 0; x--) {
+            document.write(x*x + " ");
+          }
+      </script>
+    </p>
+    <p id="p11">
+      <script>
+        for(x=0; x < sampleArray.length; x++) {
+            document.write(sampleArray[x] + " ");
+          }
+      </script>
+    </p>
+    <p id="p12">
+      <script>
+        for(x=0; x < sampleArray.length; x++) {
+            if(sampleArray[x]%2 == 0) {
+                document.write(sampleArray[x] + " ");
+            } else {
+                document.write('');
+            }
+          }
+      </script>
+    </p>
+    <p id="p13">
+      <script>
+        for(x=0; x < sampleArray.length; x++) {
+            if(sampleArray[x]%2 != 0) {
+                document.write(sampleArray[x] + " ");
+            } else {
+                document.write('');
+            }
+          }
+      </script>
+    </p>
+    <p id="p14">
+      <script>
+          for(x=0; x < sampleArray.length; x++) {
+              document.write(sampleArray[x]*sampleArray[x]);
+              document.write(" ");
+          }
+      </script>
+    </p>
+    <p id="p15">
+      <script>
+          let sum = 0
+          for (x = 1; x <= 20; x++) {
+            sum += x;
+          }
+          document.write(sum);
+      </script>
+    </p>
+    <p id="p16">
+      <script>
+          let arraySum = 0
+          for (x = 0; x < sampleArray.length; x++) {
+            arraySum += sampleArray[x];
+          }
+          document.write(arraySum);
+      </script>
+    </p>
+    <p id="p17">
+      <script>
+          document.write(Math.min.apply(null, sampleArray))
+      </script>
+    </p>
+    <p id="p18">
+      <script>
+          document.write(Math.max.apply(null, sampleArray))
+      </script>
+    </p>
+    <hr>
+    <p id="p19">
+        <script>
+            for(var i = 1; i <= 20; i++) {
+                document.write("<div id='firstDiv'></div>")
+            }
+        </script>
+    </p>
+    <hr>
+    <p id="p20">
+        <div id="d1"></div>
+        <script>
+            var count = 100
+            for(i = 1; i <= 20; i++) {
+                // Create a div, with class "bar", and set the width to 100px.
+                var newElement = document.createElement("div");
+                newElement.className = "secondDiv";
+                newElement.style.width = count + "px";
+                count += 5;
+        
+                // Place a text label inside the new div.
+                var newText = document.createTextNode("Width is" + count + "px");
+                newElement.appendChild(newText);
+        
+                // Put the new div on the page inside the existing element "d1".
+                var destination = document.getElementById("d1");
+                destination.appendChild(newElement);
+            }
+        </script>
+    </p>
+    <hr>
+    <p id="p21">
+        <div id="d2"></div>
+        <script>
+            for(i=0; i<sampleArray.length; i++) {
+                // Create a div, with class "bar", and set the width to 100px.
+                var newElement = document.createElement("div");
+                newElement.className = "arrayDiv";
+                newElement.style.width = sampleArray[i] + "px";
+        
+                // Place a text label inside the new div.
+                var newText = document.createTextNode("Pixel size" + sampleArray[i]);
+                newElement.appendChild(newText);
+        
+                // Put the new div on the page inside the existing element "d1".
+                var destination = document.getElementById("d2");
+                destination.appendChild(newElement);
+            
+            }
+        </script>
+    </p>
+    <hr>
+    <p id="p22">
+        <div id="d3"></div>
+        <script>
+            for(i=0; i<sampleArray.length; i++) {
+                // Create a div, with class "bar", and set the width to 100px.
+                var newElement = document.createElement("div");
+                newElement.className = "redDivs";
+                newElement.style.width = sampleArray[i] + "px";
+        
+                // Place a text label inside the new div.
+                var newText = document.createTextNode("Pixel size" + sampleArray[i]);
+                newElement.appendChild(newText);
+        
+                // Put the new div on the page inside the existing element "d1".
+                var destination = document.getElementById("d3");
+                destination.appendChild(newElement);
+                if(i%2 == 0) {
+                    newElement.style.backgroundColor = "red";
+                }
+            
+            }
+        </script>
+    </p>
+    <hr>
+    <p id="p23">
+        <div id="d4"></div>
+        <script>
+            for(i=0; i<sampleArray.length; i++) {
+                // Create a div, with class "bar", and set the width to 100px.
+                var newElement = document.createElement("div");
+                newElement.className = "redDivs";
+                newElement.style.width = sampleArray[i] + "px";
+        
+                // Place a text label inside the new div.
+                var newText = document.createTextNode("Pixel size" + sampleArray[i]);
+                newElement.appendChild(newText);
+        
+                // Put the new div on the page inside the existing element "d1".
+                var destination = document.getElementById("d4");
+                destination.appendChild(newElement);
+                if(i%2 != 0) {
+                    newElement.style.backgroundColor = "red";
+                }
+            
+            }
+        </script>
+    </p>
+  </body>
+</html>

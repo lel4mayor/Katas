@@ -1,0 +1,25 @@
+#firstDiv {
+    border: 1px solid black;
+    height: 20px;
+    width: 100px;
+    background-color: gray;
+}
+
+.secondDiv {
+    border: 1px solid black;
+    height: 20px;
+    /*width: 105px;*/
+    background-color: gray;
+}
+
+.arrayDiv {
+    border: 1px solid black;
+    height: 20px;
+    background-color: gray;
+}
+
+.redDivs {
+    border: 1px solid black;
+    height: 20px;
+    background-color: gray;
+}
